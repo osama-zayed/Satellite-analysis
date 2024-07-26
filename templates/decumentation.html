@@ -1,0 +1,50 @@
+{%include 'header_layout.html'%}
+   <!-- start decumentation -->
+   <section>
+    <div class="container centerPage">
+        <h2 class="mt-2">Endpoint</h2>
+        <p><code>/api/add/image</code></p>
+
+        <h2>Method</h2>
+        <p><code>POST</code></p>
+
+        <h2>Parameters</h2>
+        <ul>
+            <li>
+                <strong>image</strong> (Required): The image file to be processed. (Type: File)
+            </li>
+            <li>
+                <strong>model-select</strong> (Required): The selected model. It can have one of the following
+                values:
+                <ul>
+                    <li>buildingDensity</li>
+                    <li>buildingDetector</li>
+                    <li>routeGenerator</li>
+                    <li>slum_detection</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Response Format</h2>
+        <p><strong>Success (Status Code: 200)</strong></p>
+        <pre class="response-success">
+{
+"state": "200"
+"message": "Successfully",
+"image": "/static/image/output_image.png",
+}
+</pre>
+
+        <p><strong>Failure (Status Code: 500)</strong></p>
+        <pre class="response-failure">
+{
+"state": "500"
+"message": "Error",
+}
+</pre>
+
+    </div>
+</section>
+<!-- end decumentation -->
+
+{%include 'footer.html'%}

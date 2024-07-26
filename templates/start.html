@@ -1,0 +1,32 @@
+{%include 'header_layout.html'%}
+
+<!-- start Form -->
+<section>
+    <div class="centerPage mt-5 pt-5">
+        <div class="container mt-5 pt-5">
+            <form action="/uplodefile" method="post" class="form " enctype="multipart/form-data">
+                <h2>Drag and Drop Image Form</h2>
+                <div id="dropArea" class="drop-area">
+                    <label for="fileInput"> <i class="fa-solid fa-cloud-arrow-up"></i></label>
+                    <input type="file" name="file" id="fileInput" class="file-input"
+                        onchange="handleFileInputChange(event)">
+                </div>
+                <div class="form-group mb-3" style="text-align: left;">
+                    <label for="model-select mb-3">Your Model Selection:</label>
+                    <select class="form-control" id="model-select" name="model-select">
+                        <option value="buildingDensity">Building Density Model</option>
+                        <option value="buildingDetector">Building Detector Model</option>
+                        <option value="routeGenerator">Route Generator Model</option>
+                        <option value="slum_detection">Slum Detection</option>
+                    </select>
+                </div>
+                <div id="bottonstart">
+                    <button id="saveButton" class="btn btn-primary w-100" type="submit" value="Upload">Start</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- end Form -->
+
+{%include 'footer.html'%}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/image/design/logo.png" type="image/x-icon">
+    <title>Earth Observation Eye EOE</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/normalize.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/all.min.css') }}" />
+
+</head>
+
+<body id="body">
+    <!-- start header -->
+    <header>
+        <!-- <header id="header"> -->
+        <div class="profile">
+            <img src="../static/image/design/logo.jpg" alt="">
+            <h4>Earth Observation Eye EOE </h4>
+        </div>
+
+        <!-- start navbar -->
+        <nav>
+            <ul>
+                <!-- class="active" -->
+                <li><a href="{{ url_for('homepage') }}" ><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="{{ url_for('about_uspage') }}"><i class="fa-solid fa-user"></i> About us</a></li>
+                <li><a href="{{ url_for('startpage') }}"><i class="fa-solid fa-play"></i> Start</a></li>
+                <li><a href="{{ url_for('statisticepage') }}"><i class="fa-solid fa-square-poll-vertical"></i> Statistice</a></li>
+                <li><a href="{{ url_for('decumentationpage') }}"><i class="fa-solid fa-book"></i> Decumentation</a></li>
+            </ul>
+        </nav>
+        <!-- end navbar -->
+
+        <!-- start footer -->
+        <div class="footer">
+            <p>&copy; 2023 Your Company. <br>All rights reserved<a href="#"></a></p>
+        </div>
+        <!-- end footer -->
+
+    </header>
+
+    <!-- start mobile -->
+    <i class="fa-solid fa-bars" id="menu"></i>
+
+
+
+
+    <main>

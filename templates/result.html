@@ -1,0 +1,33 @@
+{% include 'header_layout.html' %}
+<!-- start result -->
+<section class="result" id="result">
+  <div class="centerPage">
+    <div class="container">
+      <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center">
+        <div class="card m-2" style="width: 380px; height: 80%;">
+          <img src="../static/image/{{ input }}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Input</h5>
+            <p class="card-text">This image represents its unaltered form before being enhanced using artificial intelligence for improved quality</p>
+            <a href="../static/image/{{ input }}" class="btn btn-primary" download>Download</a>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 380px; height: 80%;">
+          <img src="../static/image/output.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Output</h5>
+            <p class="card-text">This AI-powered enhancement optimizes details and enhances visuals for a sharper viewing experience</p>
+            <a href="../static/image/output.png" class="btn btn-primary" download>Download</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="hint">
+<div class="container yellow-container p-2">{{ yellow }}</div>
+<div class="container purple-container p-2">{{ purple }}</div>
+</div>
+<!-- end result -->
+{% include 'footer.html' %}
